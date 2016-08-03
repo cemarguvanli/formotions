@@ -1,0 +1,83 @@
+// Clearfix
+//
+// Nicolas Gallagher's micro clearfix hack
+//
+// @source - http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix {
+  *zoom: 1;
+  &:after,
+  &:before {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+// headline
+//
+// @usage - `@include headline(white, 12px);`
+@mixin headline ($color, $size) {
+  color: $color;
+  font-size: $size;
+}
+// headline
+//
+// @usage - `@include pad(12, 12px); @include pad(12, 12px, 15px, 30px);`
+@mixin pad ($pads) {
+  padding: $pads;
+}
+// border-radius
+//
+// @usage - `@include border-radius(12);`
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+// transition
+//
+// @usage - `@include transition(color .3s ease);`
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+// transform
+//
+// @usage - `@include transform(rotate(-30deg));`
+@mixin transform($args) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+// opacity (Cross browser opacity)
+//
+// @usage - `@include opacity(0.3);`
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+// placeholder (Cross browser opacity)
+//
+// @usage - `@include placeholder{};`
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content
+  }
+  :-moz-placeholder {
+    @content
+  }
+  ::-moz-placeholder {
+    @content
+  }
+  :-ms-input-placeholder {
+    @content
+  }
+}

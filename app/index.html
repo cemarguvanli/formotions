@@ -23,6 +23,9 @@
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
+<style media="screen">
+  /* ---- .grid-item ---- */
+</style>
 
 <body>
   <!--[if lt IE 10]>
@@ -31,7 +34,7 @@
 
   <div class="wrapper">
     <section id="home">
-      <nav class="navbar navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -47,54 +50,345 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a class="active" href="#">Home</a>
+                <a class="active" href="#home">Home</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="#services">Services</a>
               </li>
               <li>
-                <a href="#">Works</a>
+                <a href="#works">Works</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        </ol>
+        <div class="container">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"><span></span> 01</li>
+            <li data-target="#carousel" data-slide-to="1"><span></span> 02</li>
+          </ol>
+        </div>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="images/slider/slide-1.png" alt="slider">
-            <div class="carousel-caption">
-              Text
+            <!-- <img src="images/slider/slide-1.png" alt="slider"> -->
+            <div class="fill" style="background-image:url('images/slider/slide-1.png');">
+              <div class="carousel-caption container">
+                <h3>Hello</h3>
+                <h1>We Are <span>ForMotions</span></h1>
+                <p>and we are a <strong>creative</strong> agency...</p>
+              </div>
             </div>
           </div>
           <div class="item">
-            <img src="images/slider/slide-1.png" alt="slider">
-            <div class="carousel-caption">
-              Text
+            <div class="fill" style="background-image:url('images/slider/slide-2.png');">
+              <div class="carousel-caption container">
+                <h3>Hello</h3>
+                <h1>We Are <span>ForMotions</span></h1>
+                <p>and we are a <strong>creative</strong> agency...</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
     </section>
-    <section id="about">About</section>
-    <section id="services">Services</section>
-    <section id="works">Works</section>
-    <section id="contact">Contact</section>
+    <section id="about" class="fadeInBlock">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Us</h2>
+          <h1>WE ARE A CREATIVE AGENCY</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim
+                et erat. Donec efficitur congue tristique. Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="image">
+              <img src="images/about.png" class="img-responsive" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="fadeInBlock">
+      <div class="container">
+        <div class="section-title right">
+          <h2>Services</h2>
+          <h1>What We Do</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="service-tabs">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">
+                    <i class="fa fa-star-o"></i>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">
+                    <i class="fa fa-circle-thin"></i>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">
+                    <i class="fa fa-flag-o"></i>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">
+                    <i class="fa fa-television"></i>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="#tab5" aria-controls="tab5" role="tab" data-toggle="tab">
+                    <i class="fa fa-sticky-note-o"></i>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="#tab6" aria-controls="tab6" role="tab" data-toggle="tab">
+                    <i class="fa fa-code"></i>
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+                  <h4>Design & Development</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim
+                    et erat. Donec efficitur congue tristique. Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                    ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim et erat. Donec efficitur congue tristique.
+                    Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                  </p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="tab2">
+                  <h4>Circle & Thin</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim
+                    et erat. Donec efficitur congue tristique. Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                    ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim et erat. Donec efficitur congue tristique.
+                    Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                  </p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="tab3">
+                  <h4>Flag & Development</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim
+                    et erat. Donec efficitur congue tristique. Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                    ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim et erat. Donec efficitur congue tristique.
+                    Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                  </p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="tab4">
+                  <h4>Television & Development</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim
+                    et erat. Donec efficitur congue tristique. Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                    ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim et erat. Donec efficitur congue tristique.
+                    Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                  </p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="tab5">
+                  <h4>Sticky & Development</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim
+                    et erat. Donec efficitur congue tristique. Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                    ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim et erat. Donec efficitur congue tristique.
+                    Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                  </p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="tab6">
+                  <h4>Code & UX</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim
+                    et erat. Donec efficitur congue tristique. Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                    ante ante, vulputate laoreet libero eget, eleifend laoreet augue. Suspendisse suscipit porttitor enim nec congue. Proin eget posuere elit. In lorem neque, fringilla vel dictum ac, dignissim et erat. Donec efficitur congue tristique.
+                    Nullam volutpat eu ex vel rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="works" class="fadeInBlock">
+      <div class="container">
+        <div class="section-title">
+          <h2>Works</h2>
+          <h1>Recent Works</h1>
+        </div>
+        <div class="row gallery">
+          <div class="col-md-2">
+            <div class="works-filter">
+              <ul>
+                <li>
+                  <a href="#" data-filter=".Web, .Mobile"><span></span>Mobile Designs</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".MobileApp, .Mobile"><span></span>Web Designs</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".Mobile, .Web, .Development"><span></span>Mobile Designs</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".MobileApp, .Development"><span></span>Mobile App</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".Web, .MobileApp"><span></span>Development</a>
+                </li>
+                <li>
+                  <a href="#" class="active" data-filter="*"><span></span>All Works</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="items">
+              <ul class="grid">
+                <li class="grid-item transition metal grid-item--width2 Graphic">
+                  <a href="#">
+                    <img src="images/gallery/1.png" alt="" />
+                    <div class="brand">
+                      <span>Text</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="grid-item transition metal grid-item--width3 Web">
+                  <a href="#">
+                    <img src="images/gallery/2.png" alt="" />
+                    <div class="brand">
+                      <span>Text</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="grid-item transition metal grid-item--width4 Mobile">
+                  <a href="#">
+                    <img src="images/gallery/6.png" alt="" />
+                    <div class="brand">
+                      <span>Text</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="grid-item transition metal MobileApp">
+                  <a href="#">
+                    <img src="images/gallery/4.png" alt="" />
+                    <div class="brand">
+                      <span>Text</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="grid-item transition metal Development" data-category="5">
+                  <a href="#">
+                    <img src="images/gallery/4.png" alt="" />
+                    <div class="brand">
+                      <span>Text</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="grid-item transition metal grid-item--width3 Mobile" data-category="2">
+                  <a href="#">
+                    <img src="images/gallery/5.png" alt="" />
+                    <div class="brand">
+                      <span>Text</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="fadeInBlock">
+      <div class="container">
+        <div class="section-title right">
+          <h2>Contact</h2>
+          <h1>Let's Talk...</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="contact-form">
+              <form class="">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="input-group pr35">
+                      <input type="text" class="form-control" placeholder="Your name or company name">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="input-group pl35">
+                      <input type="text" class="form-control" placeholder="E-Mail">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="input-group pr35">
+                      <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="input-group pl35">
+                      <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="input-group">
+                      <textarea class="form-control" placeholder="A DESIGN, A MOBILE APP, A GRAPHIC DESIGN OR JUST SAY “HELLO” :)"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn send">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="copy" class="fadeInBlock">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="footer-logo">
+              <img src="images/footer-logo.png" alt="" />
+            </div>
+            <p>
+              ALL RIGHT RESERVED. FORMOTIONS 2016
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="makers">
+              <p>
+                DESIGN <a href="#">MERT CAN EYRİYER</a>
+              </p>
+              <p>
+                FRONT END <a href="http://cemarguvanli.com">Cem Arguvanlı</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -134,8 +428,12 @@
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-  <!-- endbuild -->
 
+  <!-- endbuild -->
+  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+
+  <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+  <script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->

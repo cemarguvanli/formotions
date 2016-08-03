@@ -1,0 +1,23 @@
+#about {
+  padding: 120px 0;
+  .content {
+    p {
+      line-height: 38px;
+      margin-top: 70px;
+      color: #626262;
+      font-weight: 100;
+      @media(max-width: 991px){
+        margin-top: 0px;
+      }
+    }
+  }
+  .image {
+    text-align: right;
+    @media(max-width: 768px){
+      text-align: center;
+    }
+    img {
+      display: inline-block;
+    }
+  }
+}

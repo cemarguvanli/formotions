@@ -1,0 +1,89 @@
+#contact {
+  padding: 100px 0 65px;
+  background: #f9fafb;
+  .contact-form {
+    margin-top: 80px;
+    form {
+      .input-group {
+        width: 100%;
+        margin: 35px 0;
+        @media(max-width: 768px){
+          padding: 0;
+        }
+        input {
+          height: 68px;
+          background: #f9fafb;
+          border: 1px solid #cacaca;
+          color: #aaaaaa;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          padding-left: 30px;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        textarea {
+          background: #f9fafb;
+          border: 1px solid #cacaca;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: #aaaaaa;
+          min-height: 120px;
+          padding: 30px;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        @include placeholder {
+          color: #aaaaaa !important;
+          opacity: inherit;
+        }
+      }
+      .send {
+        text-transform: uppercase;
+        border-radius: 0;
+        padding: 15px 35px;
+        font-size: 16px;
+        background: #363636;
+        color: #fff;
+        float: right;
+        transition: all 0.3s ease;
+        &:hover {
+          background: rgba(54, 54, 54, 0.85);
+        }
+      }
+    }
+  }
+}
+#copy {
+  background: #333333;
+  padding: 15px 0;
+  .footer-logo {
+    display: inline-block;
+  }
+  @media(max-width: 768px){
+    text-align: center;
+  }
+  p {
+    display: inline-block;
+    color: #838383;
+    font-size: 12px;
+    margin: 0 0 0 10px;
+    text-transform: uppercase;
+    a {
+      color: #838383;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .makers {
+    margin-top: 10px;
+    text-align: right;
+    @media(max-width: 768px){
+      text-align: center;
+    }
+  }
+}

@@ -1,12 +1,59 @@
 $icon-font-path: '../fonts/'; // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss"; // endbower
+ @import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+ @import 'bower_components/font-awesome/scss/font-awesome.scss';
+ // endbower
+$color-primary: #d53369;
+$color-secondary: #cbad6d;
+// $color-tertiary: #a7b34c;
+$color-gray: #a3a3a3;
+$color-light-gray: #b6b6b6;
+$color-dark-gray: #363636;
+$color-white: #fff;
+$color-black: #3d3d3d;
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
-@import 'layouts/_home.scss';
+
+.pl35{
+  padding-left: 35px;
+}
+
+.pr35{
+  padding-right: 35px;
+}
+
+.fadeInBlock {
+    // opacity:0;
+}
+
+// ==========================================================================
+// $mixins
+// ==========================================================================
+   @import 'global/_mixins.scss';
+
+// ==========================================================================
+// $fonts
+// ==========================================================================
+   @import 'global/_fonts.scss';
+
+// ==========================================================================
+// $typography
+// ==========================================================================
+   @import 'global/_typography.scss';
+
+// ==========================================================================
+// $layouts
+// ==========================================================================
+   @import 'layouts/_home.scss';
+   @import 'layouts/_about.scss';
+   @import 'layouts/_services.scss';
+   @import 'layouts/_works.scss';
+   @import 'layouts/_contact.scss';

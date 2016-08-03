@@ -1,0 +1,90 @@
+#services {
+  padding: 100px 0 65px;
+  background: #f8f8f8;
+  .service-tabs {
+    margin-top: 60px;
+    ul {
+      border: 0;
+      li {
+        width: 16.66666%;
+        padding: 2px;
+        &:last-child {
+          margin: 0;
+        }
+        a {
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+          font-size: 40px;
+          text-align: center;
+          padding: 40px 0;
+          color: $color-dark-gray;
+          transition: all 0.3s ease;
+          max-width: 130px;
+          margin: 0 auto;
+          @media(max-width: 468px){
+            padding: 20px 0;
+            font-size: 20px;
+          }
+          &:after {
+            content: '';
+            height: 2px;
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #363636;
+          }
+          &:hover {
+            background: none;
+            border: 0;
+            color: $color-primary;
+            &:after {
+              background: $color-primary;
+            }
+          }
+        }
+      }
+      li.active {
+        a {
+          background: none;
+          color: $color-primary;
+          &:before {
+            content: "\f0d9";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: rotate(-45deg);
+            font-size: 12px;
+          }
+          &:after {
+            background: $color-primary;
+          }
+        }
+      }
+    }
+    .tab-content {
+      h4 {
+        font-size: 25px;
+        color: #434343;
+        font-family: montserratextra_bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 30px 0;
+        margin-top: 40px;
+      }
+      p {
+        line-height: 38px;
+        color: #626262;
+        font-weight: 100;
+      }
+    }
+  }
+}

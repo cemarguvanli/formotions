@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.section-title{
+  h2{
+    color: $color-light-gray;
+    font-family: montserratbold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0px 0px 10px;
+    letter-spacing: 3px;
+  }
+  h1{
+    color: $color-black;
+    font-family: montserratextra_bold;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    text-transform: uppercase;
+  }
+}
+
+.section-title.right{
+  text-align: right;
+}
