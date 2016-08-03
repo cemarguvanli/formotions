@@ -6,7 +6,9 @@
     "modernizr": "~2.8.1",
     "font-awesome": "fontawesome#^4.6.3",
     "masonry": "^4.1.0",
-    "jquery": "2.1.4"
+    "jquery": "2.1.4",
+    "isotope": "^3.0.1",
+    "imagesloaded": "^4.1.0"
   },
   "overrides": {
     "bootstrap-sass": {

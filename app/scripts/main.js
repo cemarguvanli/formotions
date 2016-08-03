@@ -1,8 +1,4 @@
 'use strict';
-var config = {
-  elems: {}
-};
-
 $(document).ready(function() {
   $('.carousel').carousel({
     interval: false //changes the speed
